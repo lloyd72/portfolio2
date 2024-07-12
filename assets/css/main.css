@@ -2597,7 +2597,7 @@ portfolio grid
 ------------------------------------>
 */
 
-#three .content.box.style3 {
+#three .content.box.style6 {
     max-width: 1100px; /* Adjust this value as needed for your design */
     margin: 0 auto;
     padding: 40px;
@@ -2606,13 +2606,13 @@ portfolio grid
     text-align: center;
 }
 
-#three .content.box.style3 header h2 {
+#three .content.box.style6 header h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #fff;
 }
 
-#three .content.box.style3 p {
+#three .content.box.style6 p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     color: #ccc;
