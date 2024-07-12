@@ -950,9 +950,10 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-/* Define the custom Twitter icon */
-fa-x::before{
-	content:"𝕏";
+
+/* Define the custom Twitter X icon */
+.fa-twitter-x:before {
+    content: "\e61f"; /* Unicode for the Twitter X icon in Font Awesome 6 */
 }
 
 /* Image */
