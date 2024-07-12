@@ -2582,6 +2582,85 @@ input, select, textarea {
 		}
 
 
+/* Portfolio Section */
+#portfolio {
+    padding: 50px 20px;
+    background-color: #333; /* Dark background for the section */
+    color: #fff; /* Text color */
+}
+
+#portfolio .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#portfolio header h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#portfolio p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+#portfolio .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+#portfolio .portfolio-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#portfolio .portfolio-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+#portfolio .portfolio-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#portfolio .portfolio-box p {
+    font-size: 1rem;
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    #portfolio {
+        padding: 30px 10px;
+    }
+    
+    #portfolio .content {
+        max-width: 100%;
+    }
+
+    #portfolio .portfolio-box {
+        padding: 15px;
+    }
+
+    #portfolio .portfolio-box h3 {
+        font-size: 1.25rem;
+    }
+
+    #portfolio .portfolio-box p {
+        font-size: 0.875rem;
+    }
+}
+
+
+
 
 
 
