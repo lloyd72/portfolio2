@@ -2711,39 +2711,49 @@ portfolio grid
 }
 
 @media screen and (max-width: 1920px) {
+    .main.style4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Adjust minmax values as needed */
+        gap: 20px; /* Adjust gap between grid items */
+    }
+
     .main.style4 > .content {
-        width: 40%;
+        width: 40%; /* Adjust width of each grid item */
     }
 }
 
 @media screen and (max-width: 1280px) {
+    .main.style4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust minmax values as needed */
+        gap: 15px; /* Adjust gap between grid items */
+    }
+
     .main.style4 > .content {
-        width: 50%;
+        width: 50%; /* Adjust width of each grid item */
     }
 }
 
 @media screen and (max-width: 1000px) {
+    .main.style4 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust minmax values as needed */
+        gap: 10px; /* Adjust gap between grid items */
+    }
+
     .main.style4 > .content {
-        width: 60%;
+        width: 60%; /* Adjust width of each grid item */
     }
 }
 
 @media screen and (max-width: 736px) {
     .main.style4 {
         padding: 6em 15px;
-    }
-
-    .main.style4:before, 
-    .main.style4:after {
-        display: none !important; /* Removing pseudo-elements if used */
-    }
-
-    .main.style4 .button.anchored {
-        display: none; /* Removing specific elements if needed */
+        display: block; /* Ensure stacked layout on smaller screens */
     }
 
     .main.style4 > .content {
-        width: 100%;
+        width: 100%; /* Full width for stacked layout */
         max-width: 100%;
         text-align: center;
         transform: none; /* Reset transform on smaller screens */
