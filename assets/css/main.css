@@ -2679,102 +2679,73 @@ portfolio grid
 /*----------------------------------------------------------*/
 
 .main.style4 {
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
+    display: flex;
     align-items: center;
-    -moz-justify-content: center;
-    -webkit-justify-content: center;
-    -ms-justify-content: center;
     justify-content: center;
     padding: 3em 0;
     overflow: hidden;
 }
 
 .main.style4 > .content {
-    -moz-transition: -moz-transform 1s ease;
-    -webkit-transition: -webkit-transform 1s ease;
-    -ms-transition: -ms-transform 1s ease;
-    transition: transform 1s ease;
-    -moz-transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
     position: relative;
-    width: 35%;
+    width: 35%; /* Adjust this width for larger screens */
     margin: 0;
+    transition: transform 1s ease;
+    transform: translateZ(0);
 }
 
 .main.style4.left {
-    -moz-justify-content: -moz-flex-start;
-    -webkit-justify-content: -webkit-flex-start;
-    -ms-justify-content: -ms-flex-start;
     justify-content: flex-start;
 }
 
 .main.style4.right {
-    -moz-justify-content: -moz-flex-end;
-    -webkit-justify-content: -webkit-flex-end;
-    -ms-justify-content: -ms-flex-end;
     justify-content: flex-end;
 }
 
 .main.style4.inactive.left > .content {
-    -moz-transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
 .main.style4.inactive.right > .content {
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -ms-transform: translateX(100%);
     transform: translateX(100%);
 }
 
 @media screen and (max-width: 1920px) {
-    .main.style4 .content {
+    .main.style4 > .content {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 1280px) {
-    .main.style4 .content {
+    .main.style4 > .content {
         width: 50%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    .main.style4 .content {
+    .main.style4 > .content {
         width: 60%;
     }
 }
 
 @media screen and (max-width: 736px) {
-    .main.style4 > .content br {
-        display: none;
-    }
-    
     .main.style4 {
         padding: 6em 15px;
     }
 
-    .main.style4:before, .main.style4:after {
-        display: none !important;
+    .main.style4:before, 
+    .main.style4:after {
+        display: none !important; /* Removing pseudo-elements if used */
     }
 
     .main.style4 .button.anchored {
-        display: none;
+        display: none; /* Removing specific elements if needed */
     }
 
-    .main.style4 .content {
+    .main.style4 > .content {
         width: 100%;
         max-width: 100%;
         text-align: center;
-        -moz-transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
-        transform: none;
+        transform: none; /* Reset transform on smaller screens */
     }
 }
