@@ -951,8 +951,12 @@ input, select, textarea {
 			font-family: 'Font Awesome 5 Brands';
 		}
 /* Define the custom Twitter icon */
-.fa-x:before {
-    content: "\f099"; /* Unicode for the Twitter icon */
+.fa.fa-twitter{
+	font-family:sans-serif;
+}
+.fa.fa-twitter::before{
+	content:"𝕏";
+	font-size:1.2em;
 }
 
 /* Image */
