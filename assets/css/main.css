@@ -2591,15 +2591,35 @@ input, select, textarea {
 		}
 
 
-/* Portfolio Section */
-.portfolio-grid {
+#three .content.box.style2 {
+    max-width: 1200px; /* Adjust this value as needed for your design */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 15px; /* Rounded corners */
+    text-align: center;
+}
+
+#three .content.box.style2 header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+#three .content.box.style2 p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+#three .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
 
-.portfolio-box {
+#three .portfolio-box {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 8px;
@@ -2608,40 +2628,40 @@ input, select, textarea {
     text-decoration: none;
 }
 
-.portfolio-box img {
+#three .portfolio-box img {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
 
-.portfolio-box h3 {
+#three .portfolio-box h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-.portfolio-box p {
+#three .portfolio-box p {
     font-size: 1rem;
     color: #bbb;
 }
 
-.portfolio-box:hover {
+#three .portfolio-box:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 600px) {
-    .portfolio-grid {
+    #three .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-box {
+    #three .portfolio-box {
         padding: 15px;
     }
 
-    .portfolio-box h3 {
+    #three .portfolio-box h3 {
         font-size: 1.25rem;
     }
 
-    .portfolio-box p {
+    #three .portfolio-box p {
         font-size: 0.875rem;
     }
 }
