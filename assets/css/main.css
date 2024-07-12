@@ -956,7 +956,7 @@ input, select, textarea {
 }
 .fa.fa-twitter::before{
 	content:"𝕏";
-	font-size:1.2em;
+	font-size: 0.4rem;
 }
 
 /* Image */
